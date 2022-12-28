@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>미에로화이바 실습과제</title>
+  <style>
+    * {margin: 0; padding: 0;}
+    .content_wrap {
+      background-color: #F36F21;
+      padding: 100px 0;
+    }
+    .content {
+      width: 1170px;
+      margin: 0 auto;
+    }
+    .content > h3 {
+      font-size: 45px;
+      color: #fff;
+      margin-bottom: 25px;
+    }
+
+    .images_board {
+      padding: 0 15px;
+      display: grid;
+      grid-template-columns: repeat(3, 360px);
+      grid-template-rows: repeat(3, 250px);
+      grid-gap: 30px;
+    }
+    .images_board a {
+      text-decoration: none;
+    }
+
+    .images_board > li {
+      list-style: none;
+      background-color: #ccc;
+      position: relative;
+      overflow: hidden;
+    }
+    .images_board > li:nth-child(2) {
+      grid-area: 1/2/3/3;
+    }
+
+    .images_board > li > a > img {width: 100%;}
+
+    .images_board .info {
+      position: absolute;
+      bottom: -82px;
+      left: 0;
+      opacity: 0;
+      background-color: #040404;
+      padding: 10px 15px;
+      width: 100%;
+      transition: .5s ease;
+      box-sizing: border-box;
+    }
+    
+    .images_board > li:hover .info {
+      opacity: 1;
+      bottom: 0;
+    }
+
+    .images_board .info h4, .images_board .info p {
+      margin: 0;
+      line-height: 30px;
+    }
+
+    .images_board .info h4 {
+      color: #f36f21;
+    }
+
+    .images_board .info p {
+      display: flex;
+      color: #fff;
+      justify-content: space-between;
+      font-size: 14px;
+    }
+
+    .images_board .info .more {
+      border: 1px solid #fff;
+      padding: 0 5px;
+      font-size: 12px;
+    }
+
+  </style>
+</head>
+<body>
+  <section class="content_wrap">
+    <article class="content">
+      <h3>미에로화이바 Girl스토리</h3>
+      <ul class="images_board">
+        <li>
+          <a href="#link" title="자세히보기">
+            <img src="./images/mcon5_1.jpg" alt="2021 미에로화이바">
+            <div class="info">
+              <h4>TV광고</h4>
+              <p>2022
+                <span class="more">영상보기</span>
+              </p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#link" title="자세히보기">
+            <img src="./images/mcon5_4.jpg" alt="인쇄광고">
+            <div class="info">
+              <h4>인쇄광고</h4>
+              <p>2020</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#link" title="자세히보기">
+            <img src="./images/mcon5_2.jpg" alt="2019년 하니">
+            <div class="info">
+              <h4>인쇄광고</h4>
+              <p>2022
+                <span class="more">영상보기</span>
+              </p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#link" title="자세히보기">
+            <img src="./images/mcon5_3.jpg" alt="2021 미에로화이바">
+            <div class="info">
+              <h4>TV광고</h4>
+              <p>2021
+                <span class="more">영상보기</span>
+              </p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#link" title="자세히보기">
+            <img src="./images/mcon5_6.jpg" alt="2018년 전소민">
+            <div class="info">
+              <h4>인쇄광고</h4>
+              <p>2021
+                <span class="more">영상보기</span>
+              </p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#link" title="자세히보기">
+            <img src="./images/mcon5_7.jpg" alt="2020 미에로화이바 전소민">
+            <div class="info">
+              <h4>TV광고</h4>
+              <p>2019
+                <span class="more">영상보기</span>
+              </p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#link" title="자세히보기">
+            <img src="./images/mcon5_8.jpg" alt="미에로화이바와 함께하는 10분 홈트">
+            <div class="info">
+              <h4>프로모션</h4>
+              <p>2019
+                <span class="more">영상보기</span>
+              </p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#link" title="자세히보기">
+            <img src="./images/mcon5_9.jpg" alt="2017 강소라 오프라인 프로모션">
+            <div class="info">
+              <h4>프로모션</h4>
+              <p>2019
+                <span class="more">영상보기</span>
+              </p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </article>
+  </section>
+</body>
+</html>
