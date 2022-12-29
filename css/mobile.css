@@ -333,4 +333,13 @@ address .a_info, address .a_pay {
   padding: 10px 0;
 }
 
+/* 로그인 폼 */
+.login_main {
+  display: block;
+  width: 100%;
+  padding: 150px 30px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
 }
